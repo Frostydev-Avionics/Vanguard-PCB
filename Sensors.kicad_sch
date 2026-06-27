@@ -3123,6 +3123,12 @@
 		(uuid "7f5e2ebc-5b19-462b-a898-3a92c3f683f0")
 	)
 	(junction
+		(at 38.1 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "813c7e61-bf15-46d7-96a3-eea1c88d7c50")
+	)
+	(junction
 		(at 60.96 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3203,16 +3209,8 @@
 		(uuid "7302d390-78fa-417a-9728-9a74df517bab")
 	)
 	(no_connect
-		(at 40.64 168.91)
-		(uuid "7a92cacd-0535-41ab-95b2-9c8d87847296")
-	)
-	(no_connect
 		(at 247.65 127)
 		(uuid "7f9307b2-64bc-46fe-86ed-e8f656549989")
-	)
-	(no_connect
-		(at 40.64 171.45)
-		(uuid "824ca5c0-0da7-4533-9abc-d49b2ac2f22e")
 	)
 	(no_connect
 		(at 91.44 113.03)
@@ -3289,6 +3287,16 @@
 			(type default)
 		)
 		(uuid "04da7494-9a85-4259-bfb6-b0cbc403e673")
+	)
+	(wire
+		(pts
+			(xy 38.1 168.91) (xy 40.64 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05052b07-591f-4019-a9ec-d9151e8be4ad")
 	)
 	(wire
 		(pts
@@ -3412,6 +3420,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 171.45) (xy 38.1 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24170769-7915-4759-ae58-b6d7016af9cb")
+	)
+	(wire
+		(pts
 			(xy 200.66 132.08) (xy 204.47 132.08)
 		)
 		(stroke
@@ -3499,6 +3517,16 @@
 			(type default)
 		)
 		(uuid "34445aa2-4430-4d3c-be31-30f772ba480b")
+	)
+	(wire
+		(pts
+			(xy 38.1 168.91) (xy 38.1 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "374b9aa8-4bc8-48a2-803e-c0cb6e17630c")
 	)
 	(wire
 		(pts
@@ -4089,6 +4117,16 @@
 			(type default)
 		)
 		(uuid "e5fb59be-9ad2-4ff9-900a-e97413ebf456")
+	)
+	(wire
+		(pts
+			(xy 40.64 171.45) (xy 38.1 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e674549f-6def-4cb8-92af-ecdf46f3b37b")
 	)
 	(wire
 		(pts
@@ -7366,6 +7404,72 @@
 			(project ""
 				(path "/3eaebd91-5a76-469f-9e30-3d62ffb5c6ad/3fe83357-6c53-4f1f-b41b-54e8ba2f9ff3"
 					(reference "#PWR045")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 38.1 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ead6a687-faf9-4170-9178-6a6edb239147")
+		(property "Reference" "#PWR074"
+			(at 38.1 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 38.1 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 38.1 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63ec9abd-903f-4b00-9092-b0cc4d7a31a1")
+		)
+		(instances
+			(project "Vanguard"
+				(path "/3eaebd91-5a76-469f-9e30-3d62ffb5c6ad/3fe83357-6c53-4f1f-b41b-54e8ba2f9ff3"
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
